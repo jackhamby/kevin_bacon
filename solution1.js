@@ -6,8 +6,9 @@ let testUrl = "https://en.wikipedia.org/wiki/Footloose_(1984_film)";
 let testUrl2 = "https://en.wikipedia.org/wiki/Tom_Cruise";
 let destUrl = "https://en.wikipedia.org/wiki/Kevin_Bacon";
 
-let urlQueue = [];
 
+
+let urlQueue = [];
 
 let findBacon = async function(startingUrl){
     urlQueue.push([0, startingUrl]);
@@ -27,7 +28,6 @@ let findBacon = async function(startingUrl){
         }
     }
 }
-
 
 let fetchData = async function(url) {
     let result = await axios.get(url);
